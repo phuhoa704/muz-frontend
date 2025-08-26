@@ -7,10 +7,10 @@ const LoginPage = lazy(() => import('./page/LoginPage'))
 const AuthRoutes = () => {
   return (
     <Suspense fallback={<Loader />}>
-        <Routes>
-            <Route path='' element={<LoginPage />}/>
-            <Route path='*' element={<LoginPage />}/>
-        </Routes>
+      <Routes>
+        <Route path="" element={<LoginPage />} />
+        <Route path="*" element={<LoginPage />} />
+      </Routes>
     </Suspense>
   )
 }

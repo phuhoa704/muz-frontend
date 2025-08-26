@@ -1,3 +1,3 @@
-export * from './useGetMe';
-export * from './useLoginWithEmailAndPassword';
-export * from './useLogout';
+export * from './useGetMe'
+export * from './useLoginWithEmailAndPassword'
+export * from './useLogout'

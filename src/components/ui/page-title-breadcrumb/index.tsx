@@ -1,16 +1,16 @@
-import { cn } from '../../../lib/utils';
-import React from 'react';
-import MaskIcon, { MaskIconName } from '../mask-icon';
+import { cn } from '../../../lib/utils'
+import React from 'react'
+import MaskIcon, { MaskIconName } from '../mask-icon'
 
 interface PageTitleBreadcrumbProps {
-  icon: MaskIconName;
-  title: string;
-  actions?: React.ReactNode;
-  children?: React.ReactNode;
-  className?: string;
-  onClickTitle?: () => void;
-  childTitle?: string;
-  id?: string;
+  icon: MaskIconName
+  title: string
+  actions?: React.ReactNode
+  children?: React.ReactNode
+  className?: string
+  onClickTitle?: () => void
+  childTitle?: string
+  id?: string
 }
 
 export const PageTitleBreadcrumb: React.FC<PageTitleBreadcrumbProps> = ({
@@ -23,14 +23,16 @@ export const PageTitleBreadcrumb: React.FC<PageTitleBreadcrumbProps> = ({
   childTitle,
   id = 'pageTitle',
 }) => {
-
   const onClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-    onClickTitle && onClickTitle();
+    e.preventDefault()
+    onClickTitle && onClickTitle()
   }
 
   return (
-    <div className={cn('flex flex-col w-full gap-3 p-6 bg-white', className)} id={id}>
+    <div
+      className={cn('flex flex-col w-full gap-3 p-6 bg-white', className)}
+      id={id}
+    >
       <div className="flex items-center justify-between">
         <div className="flex items-center">
           <div className="relative mr-4 text-accent bg-accent bg-opacity-90 h-16 w-16 rounded-full">
@@ -47,12 +49,14 @@ export const PageTitleBreadcrumb: React.FC<PageTitleBreadcrumbProps> = ({
               <span>/</span>
               <h2>{childTitle}</h2>
             </div>
-          ) : <h1 className="text-xl font-normal">{title}</h1>}
+          ) : (
+            <h1 className="text-xl font-normal">{title}</h1>
+          )}
         </div>
         {actions && <div className="flex items-center">{actions}</div>}
       </div>
 
       {children}
     </div>
-  );
-};
+  )
+}

@@ -1,2 +1,2 @@
-export * from './pagination';
-export * from './setting';
+export * from './pagination'
+export * from './setting'

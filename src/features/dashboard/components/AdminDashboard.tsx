@@ -3,11 +3,9 @@ import { Card, CardContent } from '../../../components/ui/card'
 const AdminDashboard = () => {
   return (
     <div>
-        <Card>
-            <CardContent>
-
-            </CardContent>
-        </Card>
+      <Card>
+        <CardContent></CardContent>
+      </Card>
     </div>
   )
 }

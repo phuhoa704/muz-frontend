@@ -1,9 +1,6 @@
-import { useQuery } from "react-query";
-import { queryReleaseType } from "../api";
+import { useQuery } from 'react-query'
+import { queryReleaseType } from '../api'
 
-export function useReleaseTypesQuery(){
-    return useQuery(
-        ['releaseType'],
-        () => queryReleaseType()
-    )
+export function useReleaseTypesQuery() {
+  return useQuery(['releaseType'], () => queryReleaseType())
 }

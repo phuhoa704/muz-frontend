@@ -1,9 +1,9 @@
-import { cn } from '../../../lib/utils';
-import { LoaderCircle } from 'lucide-react';
+import { cn } from '../../../lib/utils'
+import { LoaderCircle } from 'lucide-react'
 
 interface SpinProps {
-  className?: string;
-  classNameCircle?: string;
+  className?: string
+  classNameCircle?: string
 }
 const Spin = ({ className, classNameCircle }: SpinProps) => {
   return (
@@ -11,11 +11,11 @@ const Spin = ({ className, classNameCircle }: SpinProps) => {
       <LoaderCircle
         className={cn(
           'animate-spin h-8 w-8 text-brand-secondary',
-          classNameCircle,
+          classNameCircle
         )}
       />
     </div>
-  );
-};
+  )
+}
 
-export { Spin };
+export { Spin }

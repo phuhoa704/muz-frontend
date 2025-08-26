@@ -1,1 +1,1 @@
-export const regexPasswordSpecialChars = /[!"#$%&'()*+,-./:;<=>?@[\]\\^_`{|}~]+/;
+export const regexPasswordSpecialChars = /[!"#$%&'()*+,-./:;<=>?@[\]\\^_`{|}~]+/

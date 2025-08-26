@@ -1,10 +1,10 @@
-import { cn } from '../../../lib/utils';
-import { FC, PropsWithChildren } from 'react';
+import { cn } from '../../../lib/utils'
+import { FC, PropsWithChildren } from 'react'
 
-type Props = PropsWithChildren & { className?: string };
+type Props = PropsWithChildren & { className?: string }
 
 const PageContent: FC<Props> = ({ children, className }) => {
-  return <div className={cn('p-3', className)}>{children}</div>;
-};
+  return <div className={cn('p-3', className)}>{children}</div>
+}
 
-export default PageContent;
+export default PageContent

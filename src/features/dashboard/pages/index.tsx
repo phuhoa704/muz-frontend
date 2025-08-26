@@ -6,10 +6,10 @@ import AdminDashboard from '../components/AdminDashboard'
 const DashboardPage = () => {
   return (
     <PageLayout>
-        <PageTitle title='Welcome to Muz!' icon='home'/>
-        <PageContent>
-            <AdminDashboard />
-        </PageContent>
+      <PageTitle title="Welcome to Muz!" icon="home" />
+      <PageContent>
+        <AdminDashboard />
+      </PageContent>
     </PageLayout>
   )
 }

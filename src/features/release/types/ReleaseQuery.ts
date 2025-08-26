@@ -1,6 +1,6 @@
-import { QueryRequest } from "../../../types";
-import { Release } from "./Release";
+import { QueryRequest } from '../../../types'
+import { Release } from './Release'
 
 export interface ReleaseQueryRequest extends QueryRequest, Partial<Release> {
-    isActive?: boolean;
+  isActive?: boolean
 }

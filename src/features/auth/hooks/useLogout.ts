@@ -1,12 +1,12 @@
-import { useAuth } from "../../../hooks/auth";
-import { AuthStorage } from "../utils";
+import { useAuth } from '../../../hooks/auth'
+import { AuthStorage } from '../utils'
 
 export function useLogout() {
-    const auth = useAuth();
+  const auth = useAuth()
 
-    return () => {
-        AuthStorage.clearAuthData();
+  return () => {
+    AuthStorage.clearAuthData()
 
-        auth.logout();
-    }
+    auth.logout()
+  }
 }

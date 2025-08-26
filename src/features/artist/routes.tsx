@@ -5,13 +5,13 @@ import Loader from '../../components/ui/loader'
 const ArtistManagementPage = lazy(() => import('./pages/ArtistMangement'))
 
 const ArtistRoutes = () => {
-    return (
-        <Suspense fallback={<Loader />}>
-            <Routes>
-                <Route path='' element={<ArtistManagementPage />} />
-            </Routes>
-        </Suspense>
-    )
+  return (
+    <Suspense fallback={<Loader />}>
+      <Routes>
+        <Route path="" element={<ArtistManagementPage />} />
+      </Routes>
+    </Suspense>
+  )
 }
 
-export default ArtistRoutes;
+export default ArtistRoutes

@@ -5,13 +5,13 @@ import Loader from '../../components/ui/loader'
 const ReleaseManagementPage = lazy(() => import('./pages/ReleaseManagement'))
 
 const ReleaseRoutes = () => {
-    return (
-        <Suspense fallback={<Loader />}>
-            <Routes>
-                <Route path='' element={<ReleaseManagementPage />} />
-            </Routes>
-        </Suspense>
-    )
+  return (
+    <Suspense fallback={<Loader />}>
+      <Routes>
+        <Route path="" element={<ReleaseManagementPage />} />
+      </Routes>
+    </Suspense>
+  )
 }
 
-export default ReleaseRoutes;
+export default ReleaseRoutes

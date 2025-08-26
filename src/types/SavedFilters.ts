@@ -1,4 +1,4 @@
 export interface SavedFilters {
-    key: string;
-    value: any;
+  key: string
+  value: any
 }

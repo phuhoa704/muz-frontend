@@ -7,9 +7,9 @@ const SongManagementPage = lazy(() => import('./pages/SongManagement'))
 const SongRoutes = () => {
   return (
     <Suspense fallback={<Loader />}>
-        <Routes>
-            <Route path='' element={<SongManagementPage />}/>
-        </Routes>
+      <Routes>
+        <Route path="" element={<SongManagementPage />} />
+      </Routes>
     </Suspense>
   )
 }

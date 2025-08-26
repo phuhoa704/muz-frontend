@@ -7,20 +7,24 @@ import SongListAction from '../components/SongListAction'
 import SongList from '../components/SongList'
 
 const SongManagement = () => {
-    return (
-        <SongManagementProvider>
-            <PageLayout>
-                <PageTitle title='Song management' icon='song' actions={<SongListAction />}/>
-                <PageContent>
-                    <Card>
-                        <CardContent>
-                            <SongList />
-                        </CardContent>
-                    </Card>
-                </PageContent>
-            </PageLayout>
-        </SongManagementProvider>
-    )
+  return (
+    <SongManagementProvider>
+      <PageLayout>
+        <PageTitle
+          title="Song management"
+          icon="song"
+          actions={<SongListAction />}
+        />
+        <PageContent>
+          <Card>
+            <CardContent>
+              <SongList />
+            </CardContent>
+          </Card>
+        </PageContent>
+      </PageLayout>
+    </SongManagementProvider>
+  )
 }
 
 export default SongManagement

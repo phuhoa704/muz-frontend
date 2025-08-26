@@ -1,6 +1,6 @@
 export interface SongFormType {
-    name: string;
-    minutes: number;
-    seconds: number;
-    artistId: any;
+  name: string
+  minutes: number
+  seconds: number
+  artistId: any
 }

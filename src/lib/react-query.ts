@@ -1,19 +1,30 @@
-import { useToast } from "../components/ui/toast/use-toast";
-import { DefaultOptions, MutationFunction, QueryClient, useMutation, UseMutationOptions } from "react-query";
+import { useToast } from '../components/ui/toast/use-toast'
+import {
+  DefaultOptions,
+  MutationFunction,
+  QueryClient,
+  useMutation,
+  UseMutationOptions,
+} from 'react-query'
 
 const queryConfig: DefaultOptions = {
-    queries: {
-        cacheTime: 5 * 1000,
-        useErrorBoundary: true,
-        refetchOnWindowFocus: false,
-        retry: false
-    }
+  queries: {
+    cacheTime: 5 * 1000,
+    useErrorBoundary: true,
+    refetchOnWindowFocus: false,
+    retry: false,
+  },
 }
 
 export const queryClient = new QueryClient({ defaultOptions: queryConfig })
 
-export interface UseMutationWithNotificationOptions<TData, TError, TVariables, TContext> extends UseMutationOptions<TData, TError, TVariables, TContext> {
-    shouldShowToastError?: boolean;
+export interface UseMutationWithNotificationOptions<
+  TData,
+  TError,
+  TVariables,
+  TContext,
+> extends UseMutationOptions<TData, TError, TVariables, TContext> {
+  shouldShowToastError?: boolean
 }
 
 function useMutationWithNotification<
@@ -28,10 +39,10 @@ function useMutationWithNotification<
     TError,
     TVariables,
     TContext
-  >,
+  >
 ) {
-  const { toast } = useToast();
-  const { shouldShowToastError = true, ...options } = config || {};
+  const { toast } = useToast()
+  const { shouldShowToastError = true, ...options } = config || {}
 
   return useMutation(mutationFn, {
     onError: (error: any) => {
@@ -40,11 +51,11 @@ function useMutationWithNotification<
         toast({
           title: error?.message,
           variant: 'destructive',
-        });
+        })
       }
     },
     ...options,
-  });
+  })
 }
 
-export { useMutationWithNotification as useMutation };
+export { useMutationWithNotification as useMutation }

@@ -1,6 +1,6 @@
-import { ArtistFormType } from "../types";
+import { ArtistFormType } from '../types'
 
 export const initFormVals: ArtistFormType = {
-    name: '',
-    description: ''
+  name: '',
+  description: '',
 }
