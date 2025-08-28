@@ -1,5 +1,5 @@
-import API from '../../../lib/api'
-import { ApiResponse } from '../../../types'
+import API from '@/lib/api'
+import { ApiResponse } from '@/types'
 import { Release } from '../types'
 import { ReleaseType } from '../types'
 import { ReleaseQueryRequest } from '../types/ReleaseQuery'

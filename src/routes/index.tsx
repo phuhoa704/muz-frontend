@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react'
-import { useAuth } from '../hooks/auth'
-import Loader from '../components/ui/loader'
+import { useAuth } from '@/hooks/auth'
+import Loader from '@/components/ui/loader'
 
 const PublicRoutes = lazy(() => import('./PublicRoutes'))
 const PrivateRoutes = lazy(() => import('./PrivateRoutes'))

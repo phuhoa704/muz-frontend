@@ -1,4 +1,4 @@
-import { Artist } from '../../artist/types'
+import { Artist } from '@/features/artist/types'
 import { ReleaseType } from './ReleaseType'
 
 export interface Release {

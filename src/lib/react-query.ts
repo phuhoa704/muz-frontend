@@ -1,4 +1,4 @@
-import { useToast } from '../components/ui/toast/use-toast'
+import { useToast } from '@/components/ui/toast/use-toast'
 import {
   DefaultOptions,
   MutationFunction,

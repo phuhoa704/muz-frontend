@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react'
-import Loader from '../../components/ui/loader'
+import Loader from '@/components/ui/loader'
 import { Routes, Route } from 'react-router-dom'
 
 const SongManagementPage = lazy(() => import('./pages/SongManagement'))

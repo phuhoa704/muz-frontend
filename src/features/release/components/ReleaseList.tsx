@@ -2,11 +2,11 @@ import { useMemo } from 'react'
 import { TABLE_COLUMNS } from '../config'
 import { Row, SortingState } from '@tanstack/react-table'
 import { Release } from '../types'
-import { PaginationTable } from '../../../components/PaginationTable'
-import { useModal } from '../../../hooks/useModal'
+import { PaginationTable } from '@/components/PaginationTable'
+import { useModal } from '@/hooks/useModal'
 import { useReleaseManagementState } from '../hooks/useReleaseManagementContext'
 import { useReleaseQuery } from '../hooks'
-import { DEFAULT_PAGINATION } from '../../../config'
+import { DEFAULT_PAGINATION } from '@/config'
 
 const useReleaseColumn = () => {
   return useMemo(() => {

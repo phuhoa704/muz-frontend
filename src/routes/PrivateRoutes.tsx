@@ -1,12 +1,12 @@
-import MainLayout from '../layouts/MainLayout'
-import { Spin } from '../components/ui/spin/spin'
+import MainLayout from '@/layouts/MainLayout'
+import { Spin } from '@/components/ui/spin/spin'
 import { Routes, Route } from 'react-router-dom'
 import { lazy, Suspense } from 'react'
-import SongRoutes from '../features/song/routes'
 
-const DashboardRoutes = lazy(() => import('../features/dashboard/routes'))
-const ArtistRoutes = lazy(() => import('../features/artist/routes'))
-const ReleaseRoutes = lazy(() => import('../features/release/routes'))
+const DashboardRoutes = lazy(() => import('@/features/dashboard/routes'))
+const ArtistRoutes = lazy(() => import('@/features/artist/routes'))
+const ReleaseRoutes = lazy(() => import('@/features/release/routes'))
+const SongRoutes = lazy(() => import('@/features/song/routes'))
 
 const PrivateRoutes = () => {
   return (

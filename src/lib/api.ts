@@ -1,4 +1,4 @@
-import { API_URL } from '../config/setting'
+import { API_URL } from '@/config/setting'
 import AxiosService from './axios'
 
 let instance: APIService | null = null

@@ -1,9 +1,9 @@
-import { useAuth } from '../../../hooks/auth'
+import { useAuth } from '@/hooks/auth'
 import { useNavigate } from 'react-router-dom'
 import { loginWithEmailAndPassword } from '../api/login'
 import { LoginRequest } from '../types'
 import { AuthStorage } from '../utils'
-import { useMutation } from '../../../lib/react-query'
+import { useMutation } from '@/lib/react-query'
 
 export function useLoginWithEmailAndPassword() {
   const auth = useAuth()

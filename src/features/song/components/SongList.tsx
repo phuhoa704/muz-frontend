@@ -1,11 +1,11 @@
 import { useMemo } from 'react'
 import { TABLE_COLUMNS } from '../config'
 import { useSongManagementState, useSongQuery } from '../hooks'
-import { useModal } from '../../../hooks/useModal'
+import { useModal } from '@/hooks/useModal'
 import { Row, SortingState } from '@tanstack/react-table'
 import { Song } from '../types'
-import { PaginationTable } from '../../../components/PaginationTable'
-import { DEFAULT_PAGINATION } from '../../../config'
+import { PaginationTable } from '@/components/PaginationTable'
+import { DEFAULT_PAGINATION } from '@/config'
 import DialogSongForm from './DialogSongForm'
 
 const useSongColumn = () => {

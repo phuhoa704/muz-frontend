@@ -1,5 +1,5 @@
-import { session } from '../lib/session'
-import { SavedFilters } from '../types/SavedFilters'
+import { session } from '@/lib/session'
+import { SavedFilters } from '@/types/SavedFilters'
 
 const searchKey = 'savedFilters'
 

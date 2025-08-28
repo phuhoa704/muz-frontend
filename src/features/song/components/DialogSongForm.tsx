@@ -8,20 +8,20 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '../../../components/ui/dialog'
+} from '@/components/ui/dialog'
 import {
   Form,
   FormField,
   FormItem,
   FormMessage,
-} from '../../../components/ui/form'
-import { InputImage } from '../../../components/ui/input-image'
-import { Input } from '../../../components/ui/input'
+} from '@/components/ui/form'
+import { InputImage } from '@/components/ui/input-image'
+import { Input } from '@/components/ui/input'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { initFormVals, songValidationSchema } from '../config'
-import { Button } from '../../../components/ui/button'
-import { Select } from '../../../components/ui/select'
-import { useArtistsQuery } from '../../artist/hooks'
+import { Button } from '@/components/ui/button'
+import { Select } from '@/components/ui/select'
+import { useArtistsQuery } from '@/features/artist/hooks'
 import { UploadAudioButton } from './UploadAudioButton'
 
 type Props = {

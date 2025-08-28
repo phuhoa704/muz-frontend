@@ -8,6 +8,7 @@ export default {
         secondary: '#5A6C57',
         dark: '#525B44',
         muted: '#777777',
+        card: "#EDF5FB"
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],

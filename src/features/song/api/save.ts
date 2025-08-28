@@ -1,5 +1,5 @@
-import API from '../../../lib/api'
-import { ApiResponse } from '../../../types'
+import API from '@/lib/api'
+import { ApiResponse } from '@/types'
 import { Song } from '../types'
 
 export const createSong = (data: FormData): Promise<ApiResponse<Song>> => {

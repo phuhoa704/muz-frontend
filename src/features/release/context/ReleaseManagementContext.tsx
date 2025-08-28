@@ -8,10 +8,10 @@ import {
 } from 'react'
 import { ReleaseQueryRequest } from '../types/ReleaseQuery'
 import { TableState } from '@tanstack/react-table'
-import { PaginationResponse } from '../../../types'
+import { PaginationResponse } from '@/types'
 import { Release } from '../types'
-import { PAGINATION_DEFAULT_SIZE, PAGINATION_FIRST_PAGE } from '../../../config'
-import { toast } from '../../../components/ui/toast/use-toast'
+import { PAGINATION_DEFAULT_SIZE, PAGINATION_FIRST_PAGE } from '@/config'
+import { toast } from '@/components/ui/toast/use-toast'
 import { useReleaseQuery } from '../hooks'
 
 export interface ReleaseManagementContextType {

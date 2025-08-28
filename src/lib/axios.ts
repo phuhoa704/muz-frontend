@@ -1,5 +1,4 @@
-// import { LoginResponse } from "../features/auth/types";
-import { AuthStorage } from '../features/auth/utils'
+import { AuthStorage } from '@/features/auth/utils'
 import Axios, {
   AxiosError,
   AxiosInstance,

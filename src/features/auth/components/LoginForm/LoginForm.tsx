@@ -6,13 +6,13 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '../../../../components/ui/form'
+} from '@/components/ui/form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { useForm } from 'react-hook-form'
 import * as yup from 'yup'
 // import { useLoginFormContext } from '../../context'
-import { Input } from '../../../../components/ui/input'
-import { Button } from '../../../../components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Button } from '@/components/ui/button'
 import { useLoginWithEmailAndPassword } from '../../hooks/useLoginWithEmailAndPassword'
 
 type LoginFormValues = {

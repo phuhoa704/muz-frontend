@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Loader from '../../components/ui/loader'
+import Loader from '@/components/ui/loader'
 
 const ReleaseManagementPage = lazy(() => import('./pages/ReleaseManagement'))
 

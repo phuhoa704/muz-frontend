@@ -1,4 +1,4 @@
-import { Role } from '../features/access-control/types'
+import { Role } from '@/features/access-control/types'
 import { IsPremium } from './IsPremium'
 
 export interface User {

@@ -1,7 +1,7 @@
 import { useMutation } from 'react-query'
 import { createSong, updateSong } from '../api'
-import { toast } from '../../../components/ui/toast/use-toast'
-import { FailureResponse } from '../../../types'
+import { toast } from '@/components/ui/toast/use-toast'
+import { FailureResponse } from '@/types'
 
 export function useCreateSongMutation() {
   return useMutation((data: any) => createSong(data), {

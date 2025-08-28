@@ -1,11 +1,11 @@
-import { Button } from '../../../components/ui/button'
+import { Button } from '@/components/ui/button'
 import {
   Dialog,
   DialogContent,
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '../../../components/ui/dialog'
+} from '@/components/ui/dialog'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { useEffect, useRef } from 'react'
@@ -14,17 +14,17 @@ import {
   FormField,
   FormItem,
   FormMessage,
-} from '../../../components/ui/form'
-import { Input } from '../../../components/ui/input'
+} from '@/components/ui/form'
+import { Input } from '@/components/ui/input'
 import { Release } from '../types'
-import { TextArea } from '../../../components/ui/textarea'
-import { InputImage } from '../../../components/ui/input-image'
+import { TextArea } from '@/components/ui/textarea'
+import { InputImage } from '@/components/ui/input-image'
 import { ReleaseFormType } from '../types/ReleaseForm'
 import { releaseValidationSchema } from '../config/validation'
 import { initFormVals } from '../config/initConf'
 import { useReleaseTypesQuery } from '../hooks/useReleaseTypesQuery'
-import { Select } from '../../../components/ui/select'
-import { useArtistsQuery } from '../../artist/hooks'
+import { Select } from '@/components/ui/select'
+import { useArtistsQuery } from '@/features/artist/hooks'
 import { useSaveRelease } from '../hooks/useSaveRelease'
 
 type Props = {

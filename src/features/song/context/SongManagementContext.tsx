@@ -8,10 +8,10 @@ import {
 } from 'react'
 import { SongQueryRequest } from '../types/SongQuery'
 import { TableState } from '@tanstack/react-table'
-import { PaginationResponse } from '../../../types'
+import { PaginationResponse } from '@/types'
 import { Song } from '../types'
-import { PAGINATION_DEFAULT_SIZE, PAGINATION_FIRST_PAGE } from '../../../config'
-import { toast } from '../../../components/ui/toast/use-toast'
+import { PAGINATION_DEFAULT_SIZE, PAGINATION_FIRST_PAGE } from '@/config'
+import { toast } from '@/components/ui/toast/use-toast'
 import { useSongQuery } from '../hooks'
 
 export interface ReleaseManagementContextType {

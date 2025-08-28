@@ -1,7 +1,7 @@
 import { useMutation } from 'react-query'
 import { createRelease, updateRelease } from '../api'
-import { toast } from '../../../components/ui/toast/use-toast'
-import { FailureResponse } from '../../../types'
+import { toast } from '@/components/ui/toast/use-toast'
+import { FailureResponse } from '@/types'
 
 export function useCreateReleaseMutation() {
   return useMutation((data: any) => createRelease(data), {
