@@ -1,17 +1,17 @@
 import ErrorFallback from '@/components/ErrorFallback'
 import { ErrorBoundary } from 'react-error-boundary'
-import { AppPrividers } from '@/providers'
+import { AppProviders } from '@/providers'
 import AppRoutes from '@/routes'
 import { LoadingBarContainer } from 'react-top-loading-bar'
 
 function App() {
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback}>
-      <AppPrividers>
+      <AppProviders>
         <LoadingBarContainer>
           <AppRoutes />
         </LoadingBarContainer>
-      </AppPrividers>
+      </AppProviders>
     </ErrorBoundary>
   )
 }

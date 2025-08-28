@@ -3,7 +3,7 @@ import { TABLE_COLUMNS } from '../config'
 import { Row, SortingState } from '@tanstack/react-table'
 import { Release } from '../types'
 import { PaginationTable } from '@/components/PaginationTable'
-import { useModal } from '@/hooks/useModal'
+// import { useModal } from '@/hooks/useModal'
 import { useReleaseManagementState } from '../hooks/useReleaseManagementContext'
 import { useReleaseQuery } from '../hooks'
 import { DEFAULT_PAGINATION } from '@/config'
@@ -19,11 +19,11 @@ const useReleaseColumn = () => {
 }
 
 const ReleaseList = () => {
-  const { filters, tableState, setFilters, loading, refreshData } =
+  const { filters, tableState, setFilters, loading } =
     useReleaseManagementState()
   const columns = useReleaseColumn()
   const query = useReleaseQuery(filters)
-  const { openModal, closeModal } = useModal()
+  // const { closeModal } = useModal()
 
   const onPageChange = (page: number) => {
     setFilters({ pageIndex: page, pageSize: filters.pageSize })
@@ -38,12 +38,12 @@ const ReleaseList = () => {
     setFilters({ sortBy: sort.id, sortDir: sort.desc ? 'desc' : 'asc' })
   }
 
-  const handleCloseReleaseModal = (rep?: Release) => {
-    if (rep) {
-      refreshData()
-    }
-    closeModal()
-  }
+  // const handleCloseReleaseModal = (rep?: Release) => {
+  //   if (rep) {
+  //     refreshData()
+  //   }
+  //   closeModal()
+  // }
 
   const onRowClick = (row: Row<Release>) => {
     const { id } = row.original

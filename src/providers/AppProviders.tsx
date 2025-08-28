@@ -6,7 +6,7 @@ import { ReactNode } from 'react'
 import { HelmetProvider } from 'react-helmet-async'
 import { QueryClientProvider } from 'react-query'
 
-const AppPrividers = ({ children }: { children: ReactNode }) => {
+const AppProviders = ({ children }: { children: ReactNode }) => {
   return (
     <QueryClientProvider client={queryClient}>
       <HelmetProvider>
@@ -20,4 +20,4 @@ const AppPrividers = ({ children }: { children: ReactNode }) => {
   )
 }
 
-export { AppPrividers }
+export { AppProviders }

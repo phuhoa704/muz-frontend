@@ -41,7 +41,6 @@ import {
 import React from 'react'
 import { When } from 'react-if'
 import { isBoolean } from 'lodash'
-import { Select } from './ui/select'
 
 const paginationSize = 7
 
@@ -54,10 +53,10 @@ const defaultPagination: PaginationResponse = {
   hasPrevPage: false,
 }
 
-const sizeOptions = [10, 20, 50, 100].map((opt) => ({
-  label: opt,
-  value: opt,
-}))
+// const sizeOptions = [10, 20, 50, 100].map((opt) => ({
+//   label: opt,
+//   value: opt,
+// }))
 
 const SortingIcons = {
   asc: <ArrowUpNarrowWide size={16} />,
@@ -236,7 +235,7 @@ const PaginationTable = <T,>({
 
 const PaginationControl: React.FC<PaginationProps> = ({
   pagination,
-  onPageSizeChange,
+  // onPageSizeChange,
   onPageChange,
 }) => {
   const { currentPage, size, total, totalPage } =
